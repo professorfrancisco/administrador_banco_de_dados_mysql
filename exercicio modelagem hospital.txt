@@ -1,0 +1,12 @@
+Exercício. Crie o modelagem de um Hospital.
+
+entidades:
+funcionarios,
+pacientes,
+descricao_funcionario,
+salas,
+triagem,
+status,
+email,
+telefone,
+endereco
