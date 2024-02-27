@@ -1,0 +1,32 @@
+CREATE DATABASE empresa;
+
+use empresa;
+
+create table cargo(
+id int auto_increment primary key,
+descricao_cargo varchar(100)
+);
+
+insert into cargo (descricao_cargo) values ("MOTORISTA"), ("ANALISTA DE TI"),
+("TECNICO DE TI"),("BIBLIOTECARIO"),("PROFESSOR"),("ESTAGIARIO"),("SECRETARIO_ESCOLAR"),
+("DIRETOR"),("COORDENADOR");
+
+create table funcionario(
+id int auto_increment primary key,
+nome varchar(200) not null,
+rg varchar(10) not null unique,
+cpf varchar(15) not null unique,
+id_cargo int,
+foreign key (id_cargo) references cargo(id)
+);
+
+select * from CARGO;
+
+insert into funcionario(nome,rg,cpf,id_cargo) values
+("FRANCISCO JOSÉ","2239567","005.567.908-09",5),
+("PAULO AUGUSTO","6765754","005.546.656-05",3),
+("MARIA ROSA","5457656","005.676.554-04",5),
+("SUELY ARAUJO","67574765","005.876.567-03",7),
+("MARTA OLIVEIRA","6765788","005.434.990-02",1),
+("PEDRO RAMOS","4245478","005.123.687-07",4),
+("MARCO ANTÔNIO","2436576","005.676.434-03",2);
