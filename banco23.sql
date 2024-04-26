@@ -1,5 +1,4 @@
-        INSERT INTO `cities` (`id`, `region_id`, `country_id`, `latitude`, `longitude`, `name`) VALUES
-        (1100000, 1620, 95, 32.97111110, 35.14500000, 'Beit Ha`Emeq'),
+ INSERT INTO `cities` (`id`, `region_id`, `country_id`, `latitude`, `longitude`, `name`) VALUES        
 	(1100001, 1621, 95, 31.41666670, 34.60000000, 'Beit Hagaddi'),
 	(1100002, 1621, 95, 31.41666670, 34.60000000, 'Beit Hagadi'),
 	(1100003, 1621, 95, 31.41666670, 34.60000000, 'Beit Hageddi'),
